@@ -1,0 +1,67 @@
+@import "_reset.scss"; /* Responsive */
+@media (max-width: 414px) {
+    .content-main {
+        padding: 40px 20px 60px;
+        &--info {
+            .avatar {
+                text-align: center;
+            }
+        }
+         .experience-content .experience-item--title_time {
+            float: left;
+        }
+        .project-item--images .overlay-content h2{
+            font-size: 18px;
+        }
+        .content-main .project-item--images .overlay-content p{
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .content-main {
+        &--info {
+            margin: 0;
+            .avatar {
+                padding: 25px 0;
+            }
+            .description {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+}
+@media (max-width: 1365px) {
+    .content-main {
+        &--info {
+            margin: 0;
+            .avatar {
+                padding: 25px 0;
+            }
+            .description {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        min-width: 1270px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content-main{
+        &--info {
+            .avatar {
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+}

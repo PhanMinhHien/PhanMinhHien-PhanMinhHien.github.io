@@ -1,0 +1,46 @@
+@mixin display-flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin slider($margin, $padding) {
+  .mr-15 {
+    margin: 0 $margin;
+  }
+  .slick-slide {
+    padding: $padding;
+  }
+}
+%margin-bottom {
+ margin-bottom: 20px;
+}
+@mixin title {
+  h3{
+    display: inline-block;
+    position: relative;
+    font-size: 21px;
+    margin: 0 0 20px;
+    padding-bottom: 12px;
+    text-transform: capitalize;
+    &::before{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 100%;
+      background-color: #353535;
+      height: 2px;
+      bottom: 0;
+    }
+    &::after{
+      display: block;
+      position: absolute;
+      content: '';
+      width: 50%;
+      background-color: $color-default;
+      height: 2px;
+      bottom: 0;
+    }
+  }
+}
+$font-family: "Open Sans", sans-serif;
+$color-default: #007ced;
